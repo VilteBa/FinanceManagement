@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxControllers.CategoryManagement">
+   <children>
+      <Button fx:id="categoryInfoBtn" layoutX="380.0" layoutY="66.0" mnemonicParsing="false" onAction="#showCategoryInfo" prefHeight="47.0" prefWidth="185.0" text="View Info" />
+      <ListView fx:id="categoryList" layoutX="20.0" layoutY="38.0" prefHeight="354.0" prefWidth="329.0" />
+      <Button fx:id="manageSubcategoriesBtn" layoutX="380.0" layoutY="128.0" mnemonicParsing="false" onAction="#manageSubcategories" prefHeight="47.0" prefWidth="186.0" text="Manage subcategories" />
+      <Button fx:id="deleteCategoryBtn" layoutX="380.0" layoutY="193.0" mnemonicParsing="false" onAction="#deleteCategory" prefHeight="47.0" prefWidth="186.0" text="Delete category" />
+      <Button fx:id="backParentBtn" layoutX="168.0" mnemonicParsing="false" onAction="#backToParen" prefHeight="32.0" prefWidth="242.0" text="Back to Parent Category" />
+      <Button fx:id="addCategoryBtn" layoutX="380.0" layoutY="254.0" mnemonicParsing="false" onAction="#addCategory" prefHeight="47.0" prefWidth="186.0" text="Add category to list" />
+      <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backToMenu" prefHeight="32.0" prefWidth="186.0" text="Back to Main Menu" />
+   </children>
+</AnchorPane>

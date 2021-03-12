@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxControllers.MainSystemWindow">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="515.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Load" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="userBtn" layoutX="398.0" layoutY="3.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#userSettings" prefHeight="26.0" prefWidth="200.0" text="name, surname" AnchorPane.bottomAnchor="370.6" AnchorPane.leftAnchor="398.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="3.0" />
+      <Label layoutX="498.0" layoutY="369.0" prefHeight="17.0" prefWidth="53.0" text="System" />
+      <Label fx:id="version" layoutX="551.0" layoutY="369.0" text="version" />
+      <Button fx:id="categoriesManagementBtn" layoutX="225.0" layoutY="171.0" mnemonicParsing="false" onAction="#loadCategoriesManagement" prefHeight="58.0" prefWidth="162.0" text="Manage Categories" />
+      <Button fx:id="logOutBtn" layoutX="225.0" layoutY="252.0" mnemonicParsing="false" onAction="#logOut" prefHeight="58.0" prefWidth="162.0" text="Log out" />
+      <Label layoutX="236.0" layoutY="62.0" text="Total income:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="93.0" text="Total expense:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="income" layoutX="353.0" layoutY="65.0" text="income">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="expense" layoutX="353.0" layoutY="96.0" text="expense">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
